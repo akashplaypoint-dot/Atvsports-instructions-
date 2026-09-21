@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0c0c14"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" stroke="#E50914" stroke-width="2" stroke-opacity="0.6"/>
+  <circle cx="32" cy="36" r="5" fill="#E50914"/>
+  <!-- Broadcast wave rings -->
+  <path d="M22 26C27.5 20.5 36.5 20.5 42 26" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M16 20C24.8 11.2 39.2 11.2 48 20" stroke="#E50914" stroke-width="3" stroke-linecap="round"/>
+  <path d="M27 31C29.8 28.2 34.2 28.2 37 31" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Antenna stem -->
+  <path d="M32 41V52" stroke="#E50914" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 52H40" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

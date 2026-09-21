@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Homepage: Brand, Overview, Live Sports and App Highlights -->
+  <url>
+    <loc>https://atvsports.com/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Official Download Page: Android APK, Specifications and Setup -->
+  <url>
+    <loc>https://atvsports.com/download</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Features & Sports Categories: Live Football, Cricket, Channels -->
+  <url>
+    <loc>https://atvsports.com/features</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Frequently Asked Questions: App, Safety, PC Emulator, Streaming -->
+  <url>
+    <loc>https://atvsports.com/faq</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- All Guides & Knowledge Base Directory -->
+  <url>
+    <loc>https://atvsports.com/posts</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Guide 1: How to Download ATV Sports APK -->
+  <url>
+    <loc>https://atvsports.com/posts/download-atv-sports</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Guide 2: How to Watch Live Sports on ATV Sports -->
+  <url>
+    <loc>https://atvsports.com/posts/watch-sports-atv-sports</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Guide 3: How to Update ATV Sports to Latest Version -->
+  <url>
+    <loc>https://atvsports.com/posts/update-atv-sports</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Guide 4: How to Use ATV Sports on PC/Laptop with Android Emulator -->
+  <url>
+    <loc>https://atvsports.com/posts/atv-sports-emulator</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Guide 5: How to Stream Sports on Low Mobile Data -->
+  <url>
+    <loc>https://atvsports.com/posts/save-data-atv-sports</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

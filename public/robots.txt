@@ -1,0 +1,27 @@
+# Robots.txt for ATV Sports (https://atvsports.com)
+#
+# GOOGLE SEARCH CONSOLE INSTRUCTIONS:
+# 1. Log in to Google Search Console (https://search.google.com/search-console).
+# 2. Select the ATV Sports domain or URL-prefix property.
+# 3. Navigate to "Index" -> "Sitemaps" in the left-hand navigation sidebar.
+# 4. Enter "sitemap.xml" in the "Add a new sitemap" input and click "Submit".
+# 5. Verify that Google reports "Success" with all 10 canonical URLs discovered.
+
+User-agent: *
+Allow: /
+Allow: /download
+Allow: /features
+Allow: /faq
+Allow: /posts
+Allow: /posts/*
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Disallow search query parameters to avoid duplicate crawling
+Disallow: /search?*
+
+Sitemap: https://atvsports.com/sitemap.xml

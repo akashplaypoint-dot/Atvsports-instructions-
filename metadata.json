@@ -1,0 +1,6 @@
+{
+  "name": "ATV Sports",
+  "description": "ATV Sports is the official sports platform for live cricket, football matches, sports TV channels, and verified Android APK download guides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
