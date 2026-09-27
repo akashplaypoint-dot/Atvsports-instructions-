@@ -29,8 +29,16 @@
   <!-- Frequently Asked Questions: App, Safety, PC Emulator, Streaming -->
   <url>
     <loc>https://atvsports.com/faq</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Official Contact & Community Channels (Developer Info: AKASH EXPRESS) -->
+  <url>
+    <loc>https://atvsports.com/contact</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 

@@ -17,7 +17,8 @@ import {
   ExternalLink,
 } from 'lucide-react';
 import { updatePageSeo } from '../utils/seo.ts';
-import { DOWNLOAD_URL, APP_VERSION, APP_FILE_SIZE } from '../constants.ts';
+import { DOWNLOAD_URL, APP_VERSION, APP_FILE_SIZE, CONTACT_INFO, DEVELOPER_INFO } from '../constants.ts';
+import { Send, MessageCircle, Users } from 'lucide-react';
 
 interface DownloadPageProps {
   onNavigate: (path: string) => void;
@@ -426,6 +427,51 @@ export const DownloadPage: React.FC<DownloadPageProps> = ({ onNavigate }) => {
                 Android 5.0 (Lollipop) থেকে শুরু করে Android 14 ও 15 পর্যন্ত সম্পূর্ণ কম্প্যাটিবল।
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community & Match Link Support Banner */}
+      <section className="mb-16">
+        <div className="rounded-2xl bg-gradient-to-r from-[#0d0d18] via-[#121222] to-[#0d0d18] border border-white/10 p-6 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-xl">
+          <div className="space-y-2 text-center lg:text-left">
+            <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-red-600/20 text-red-400 border border-red-500/30">
+              Need Instant Match Streams?
+            </span>
+            <h3 className="font-tech text-xl sm:text-2xl font-black uppercase text-white">
+              Join Official <span className="text-red-500">Channels</span> &amp; Community
+            </h3>
+            <p className="text-xs sm:text-sm text-zinc-400 font-bengali max-w-xl">
+              ম্যাচ শুরু হওয়ার নোটিফিকেশন, ব্যাকআপ স্ট্রিমিং লিঙ্ক এবং যেকোনো ইনস্টলেশন জটিলতায় সরাসরি আমাদের হোয়াটসঅ্যাপ ও টেলিগ্রাম গ্রুপে যুক্ত হোন।
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-3 shrink-0">
+            <a
+              href={CONTACT_INFO.whatsappChannel}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-tech font-bold uppercase tracking-wider transition-all"
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>WhatsApp Channel</span>
+            </a>
+            <a
+              href={CONTACT_INFO.telegramChannel}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-tech font-bold uppercase tracking-wider transition-all"
+            >
+              <Send className="w-4 h-4" />
+              <span>Telegram Channel</span>
+            </a>
+            <button
+              onClick={() => onNavigate('/contact')}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-tech font-bold uppercase tracking-wider transition-all border border-white/10"
+            >
+              <span>All Channels &amp; Dev</span>
+              <ArrowRight className="w-3.5 h-3.5 text-red-500" />
+            </button>
           </div>
         </div>
       </section>

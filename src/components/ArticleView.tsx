@@ -15,7 +15,8 @@ import {
 import { Article } from '../types.ts';
 import { calculateReadingTime } from '../utils/readingTime.ts';
 import { updatePageSeo } from '../utils/seo.ts';
-import { DOWNLOAD_URL, APP_VERSION, APP_FILE_SIZE } from '../constants.ts';
+import { DOWNLOAD_URL, APP_VERSION, APP_FILE_SIZE, CONTACT_INFO, DEVELOPER_INFO } from '../constants.ts';
+import { Send, MessageCircle } from 'lucide-react';
 
 interface ArticleViewProps {
   article: Article;
@@ -414,6 +415,52 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
                 className="w-full sm:w-auto px-4 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-zinc-300 hover:text-white font-tech font-bold text-xs uppercase tracking-wider transition-colors border border-white/10"
               >
                 <span>View Install Guide</span>
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* Community & Developer Support Connect Box */}
+        <div className="mt-6 p-5 rounded-2xl bg-[#0c0c14] border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3 text-center sm:text-left">
+            <div className="w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/30 flex items-center justify-center text-red-400 font-bold text-sm shrink-0">
+              AE
+            </div>
+            <div>
+              <p className="text-xs font-tech font-bold uppercase text-white">
+                Have questions or need stream links?
+              </p>
+              <p className="text-xs text-zinc-400 font-bengali">
+                অফিসিয়াল হোয়াটসঅ্যাপ/টেলিগ্রাম চ্যানেল অথবা ডেভেলপারের সাথে সরাসরি যোগাযোগ করুন।
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2.5 shrink-0 flex-wrap justify-center">
+            <a
+              href={CONTACT_INFO.whatsappChannel}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600 text-emerald-400 hover:text-white border border-emerald-500/30 text-xs font-tech font-bold uppercase flex items-center gap-1.5 transition-all"
+            >
+              <MessageCircle className="w-3.5 h-3.5" />
+              <span>WhatsApp</span>
+            </a>
+            <a
+              href={CONTACT_INFO.telegramChannel}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 rounded-lg bg-sky-600/20 hover:bg-sky-600 text-sky-400 hover:text-white border border-sky-500/30 text-xs font-tech font-bold uppercase flex items-center gap-1.5 transition-all"
+            >
+              <Send className="w-3.5 h-3.5" />
+              <span>Telegram</span>
+            </a>
+            {onNavigate && (
+              <button
+                onClick={() => onNavigate('/contact')}
+                className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 hover:text-white border border-white/10 text-xs font-tech font-bold uppercase transition-all"
+              >
+                <span>All Contacts</span>
               </button>
             )}
           </div>

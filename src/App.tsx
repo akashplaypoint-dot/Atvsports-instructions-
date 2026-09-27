@@ -13,6 +13,8 @@ import { FaqPage } from './components/FaqPage.tsx';
 import { AboutSection } from './components/AboutSection.tsx';
 import { SportsCategoriesSection } from './components/SportsCategoriesSection.tsx';
 import { FaqSection } from './components/FaqSection.tsx';
+import { ContactPage } from './components/ContactPage.tsx';
+import { CommunityContactSection } from './components/CommunityContactSection.tsx';
 import { GlobalBackgroundAnimation } from './components/GlobalBackgroundAnimation.tsx';
 import { FloatingDownloadButton } from './components/FloatingDownloadButton.tsx';
 import { updatePageSeo } from './utils/seo.ts';
@@ -97,6 +99,23 @@ export default function App() {
               priceCurrency: 'USD',
             },
           },
+        ],
+      });
+      return cleanup;
+    } else if (currentPath === '/contact') {
+      const cleanup = updatePageSeo({
+        title: 'ATV Sports Contact & Official Community – Developer Info (AKASH EXPRESS)',
+        description:
+          'Official contact channels and community hub for ATV Sports: WhatsApp channel, Telegram channel, Telegram group, backup channel, Telegram bot, Facebook group, Facebook page, and Developer info (AKASH EXPRESS).',
+        canonicalPath: '/contact',
+        keywords: [
+          'ATV Sports contact',
+          'ATV Sports telegram channel',
+          'ATV Sports whatsapp channel',
+          'ATV Sports developer',
+          'AKASH EXPRESS',
+          'atvsports community',
+          'atvsports support',
         ],
       });
       return cleanup;
@@ -225,6 +244,15 @@ export default function App() {
       );
     }
 
+    // Contact & Community Route: /contact
+    if (cleanPath === '/contact') {
+      return (
+        <main>
+          <ContactPage onNavigate={(p) => navigate(p)} />
+        </main>
+      );
+    }
+
     // Home route: /
     if (cleanPath === '/') {
       return (
@@ -247,6 +275,9 @@ export default function App() {
 
           {/* Live Sports & Content Categories */}
           <SportsCategoriesSection onNavigate={(p) => navigate(p)} />
+
+          {/* Community & Contact Hub on Homepage */}
+          <CommunityContactSection onNavigate={(p) => navigate(p)} />
 
           {/* Frequently Asked Questions Preview */}
           <FaqSection

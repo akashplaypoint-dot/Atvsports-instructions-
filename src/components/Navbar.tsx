@@ -158,6 +158,22 @@ export const Navbar: React.FC<NavbarProps> = ({
               FAQ
             </a>
 
+            <a
+              id="nav-link-contact"
+              href="/contact"
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick('/contact');
+              }}
+              className={`px-3.5 py-1.5 rounded-full text-xs font-tech font-bold uppercase tracking-wider transition-all duration-200 ${
+                currentPath === '/contact'
+                  ? 'bg-red-600 text-white shadow-md shadow-red-600/40'
+                  : 'text-zinc-300 hover:text-white hover:bg-white/5'
+              }`}
+            >
+              Contact
+            </a>
+
             <button
               id="nav-link-search"
               onClick={onOpenSearch}
@@ -344,6 +360,26 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <span>FAQ &amp; Answers</span>
             <span className="text-xs text-zinc-500">04</span>
+          </a>
+
+          <a
+            id="mobile-nav-contact"
+            href="/contact"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavClick('/contact');
+            }}
+            className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-tech font-bold uppercase tracking-wider text-left transition-colors ${
+              currentPath === '/contact'
+                ? 'bg-red-600/20 text-red-400 border border-red-500/30'
+                : 'text-zinc-300 hover:bg-white/5'
+            }`}
+          >
+            <span className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+              <span>Contact &amp; Community</span>
+            </span>
+            <span className="text-xs text-zinc-500">05</span>
           </a>
 
           <button
